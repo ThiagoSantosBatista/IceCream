@@ -1,0 +1,32 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 8rem;
+  width: 100%;
+  box-shadow: 0 0.4rem 0.2rem -0.1rem rgba(95, 23, 39, 0.25);
+  z-index: 10;
+  &-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    margin: 0 4%;
+  }
+  &__logo {
+    width: 17.6rem;
+    height: auto;
+  }
+}
+.nav {
+  &__list {
+    display: flex;
+    gap: 1.5rem;
+    a {
+      font-size: 1.7rem;
+      padding: 1.5rem;
+      letter-spacing: 0.1rem;
+      text-transform: uppercase;
+    }
+  }
+}
