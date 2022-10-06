@@ -1,30 +1,45 @@
+$c-rosa1: #660a1f;
+$c-rosa2: #8f253e;
+$c-rosa3: #ffe0eb;
+$c-rosa4: #a31c39;
+$c-rosa5: #d01647;
+$c-laranja: #a44b28;
+$c-laranja2: #d05d30;
+$c-azul: #244454;
+$c-azul2: #375665;
+$c-cinza: #474747;
+$c-preto: #121212;
+$c-branco: #ffffff;
+$font-texto: 'Roboto', sans-serif;
+$font-titulo: 'Arima Madurai', cursive;
+
 *,
 *::after,
 *::before {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: $font-texto;
 }
-html{
-    font-size: 62.5%;
+html {
+  font-size: 62.5%;
 }
-body{
-    min-height: 100vh;
-
+body {
+  min-height: 100vh;
 }
-img{
-    display: block;
-    max-width: 100%;
-    pointer-events: none;
+img {
+  display: block;
+  max-width: 100%;
+  pointer-events: none;
 }
-li{
-    list-style: none;
+li {
+  list-style: none;
 }
-a{
-    display: inline-block;
-    text-decoration: none;
+a {
+  display: inline-block;
+  text-decoration: none;
 }
-.container{
-    max-width: 144rem;
-    margin: 0 auto;
+.container {
+  max-width: 144rem;
+  margin: 0 auto;
 }
