@@ -99,6 +99,8 @@ a {
   font-size: 6.4rem;
   line-height: 1.2;
   margin-bottom: 1.6rem;
+  font-family: "Arima Madurai", cursive;
+  font-weight: 800;
   color: #660a1f;
 }
 .hero__conteudo p {
@@ -116,6 +118,42 @@ a {
   text-transform: uppercase;
   color: #ffe0eb;
   background: #660a1f;
+}
+
+.sobre {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  place-items: center;
+}
+.sobre__img {
+  height: 67rem;
+  object-fit: cover;
+}
+.sobre__conteudo {
+  padding: 0 8rem;
+}
+.sobre__conteudo h2 {
+  font-family: "Arima Madurai", cursive;
+  line-height: 1.2;
+  font-size: 5rem;
+  margin-bottom: 1.6rem;
+  color: #a44b28;
+}
+.sobre__conteudo p {
+  font-size: 2.2rem;
+  line-height: 1.5;
+  color: #d05d30;
+  margin-bottom: 1rem;
+}
+.sobre__conteudo p:nth-child(3) {
+  margin-bottom: 5.2rem;
+}
+.sobre__conteudo a {
+  font-size: 2.4rem;
+  color: #a44b28;
+  text-transform: uppercase;
+  font-weight: 700;
+  border-bottom: 0.2rem solid #a44b28;
 }
 
 /*# sourceMappingURL=style.css.map */

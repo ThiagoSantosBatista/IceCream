@@ -7,14 +7,14 @@
   background-position: right;
   background-size: cover;
   object-fit: cover;
-  &-box{
+  &-box {
     display: grid;
     align-items: center;
     justify-items: left;
     height: 100%;
     margin: 0 7%;
   }
-  .container{
+  .container {
     height: 100%;
   }
   &__conteudo {
@@ -23,6 +23,8 @@
       font-size: 6.4rem;
       line-height: 1.2;
       margin-bottom: 1.6rem;
+      font-family: $font-titulo;
+      font-weight: 800;
       color: $c-rosa1;
     }
     p {
@@ -40,6 +42,42 @@
       text-transform: uppercase;
       color: $c-rosa3;
       background: $c-rosa1;
+    }
+  }
+}
+
+.sobre {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  place-items: center;
+  &__img {
+    height: 67rem;
+    object-fit: cover;
+  }
+  &__conteudo {
+    padding: 0 8rem;
+    h2 {
+      font-family: $font-titulo;
+      line-height: 1.2;
+      font-size: 5rem;
+      margin-bottom: 1.6rem;
+      color: $c-laranja;
+    }
+    p {
+      font-size: 2.2rem;
+      line-height: 1.5;
+      color: $c-laranja2;
+      margin-bottom: 1rem;
+    }
+    & p:nth-child(3) {
+      margin-bottom: 5.2rem;
+    }
+    a {
+      font-size: 2.4rem;
+      color: $c-laranja;
+      text-transform: uppercase;
+      font-weight: 700;
+      border-bottom: 0.2rem solid $c-laranja;
     }
   }
 }
