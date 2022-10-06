@@ -10,7 +10,7 @@
   &-box {
     display: grid;
     align-items: center;
-    justify-items: left;
+    justify-items: start;
     height: 100%;
     margin: 0 5%;
   }
@@ -119,6 +119,57 @@
       text-transform: uppercase;
       border-radius: 0.5rem;
       font-size: 2.2rem;
+    }
+  }
+}
+
+.contato {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  &__img {
+    height: 67rem;
+    width: auto;
+    object-fit: cover;
+  }
+  &__conteudo {
+    padding-right: 10%;
+    max-width: 52.5rem;
+    margin-left: 10.5rem;
+    h2 {
+      font-family: $font-titulo;
+      line-height: 1.2;
+      font-size: 4.8rem;
+      margin-bottom: 1.6rem;
+      color: $c-azul;
+    }
+    h3 {
+      font-size: 2.4rem;
+      color: $c-azul;
+    }
+    p {
+      font-size: 2rem;
+      line-height: 1.5;
+      color: $c-azul2;
+    }
+    li + li {
+      margin-top: 3.6rem;
+    }
+  }
+  &__list {
+    margin-top: 4.8rem;
+  }
+  &__item {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    justify-content: start;
+    gap: 1rem 1.5rem;
+    img {
+      grid-row: 1/-1;
+    }
+    &--mg p:first-child {
+      margin-bottom: 0.5rem;
     }
   }
 }
