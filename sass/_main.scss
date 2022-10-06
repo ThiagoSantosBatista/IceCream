@@ -55,29 +55,65 @@
     object-fit: cover;
   }
   &__conteudo {
-    padding: 0 8rem;
+    padding: 0 10rem;
     h2 {
       font-family: $font-titulo;
       line-height: 1.2;
-      font-size: 5rem;
+      font-size: 4.8rem;
       margin-bottom: 1.6rem;
       color: $c-laranja;
     }
     p {
-      font-size: 2.2rem;
+      font-size: 2rem;
       line-height: 1.5;
       color: $c-laranja2;
       margin-bottom: 1rem;
     }
     & p:nth-child(3) {
-      margin-bottom: 5.2rem;
+      margin-bottom: 4.8rem;
     }
     a {
-      font-size: 2.4rem;
+      font-size: 2.2rem;
       color: $c-laranja;
       text-transform: uppercase;
       font-weight: 700;
       border-bottom: 0.2rem solid $c-laranja;
+    }
+  }
+}
+
+.cardapio {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  place-items: center;
+  &__img {
+    height: 67rem;
+    object-fit: cover;
+  }
+  &__conteudo {
+    padding: 0 10rem;
+    h2 {
+      font-family: $font-titulo;
+      line-height: 1.2;
+      font-size: 4.8rem;
+      margin-bottom: 1.6rem;
+      color: $c-rosa4;
+    }
+    p {
+      font-size: 2rem;
+      line-height: 1.5;
+      color: $c-rosa5;
+      margin-bottom: 4.8rem;
+    }
+    button {
+      padding: 1.5rem 3rem;
+      background: $c-rosa4;
+      color: $c-branco;
+      border: none;
+      cursor: pointer;
+      text-transform: uppercase;
+      border-radius: 0.5rem;
+      font-size: 2.2rem;
     }
   }
 }
