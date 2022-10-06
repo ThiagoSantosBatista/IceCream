@@ -42,6 +42,7 @@ a {
   height: 8rem;
   width: 100%;
   box-shadow: 0 0.4rem 0.2rem -0.1rem rgba(95, 23, 39, 0.25);
+  background: #ffffff;
   z-index: 10;
 }
 .header-box {
@@ -69,6 +70,52 @@ a {
   letter-spacing: 0.1rem;
   text-transform: uppercase;
   color: #660a1f;
+}
+
+.hero {
+  margin-top: 8rem;
+  max-height: 70rem;
+  height: calc(100vh - 8rem);
+  background: url(/img/hero__img-desktop.png);
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: cover;
+  object-fit: cover;
+}
+.hero-box {
+  display: grid;
+  align-items: center;
+  justify-items: left;
+  height: 100%;
+  margin: 0 7%;
+}
+.hero .container {
+  height: 100%;
+}
+.hero__conteudo {
+  max-width: 95ch;
+}
+.hero__conteudo h1 {
+  font-size: 6.4rem;
+  line-height: 1.2;
+  margin-bottom: 1.6rem;
+  color: #660a1f;
+}
+.hero__conteudo p {
+  line-height: 1.5;
+  margin-bottom: 5.2rem;
+  color: #8f253e;
+  font-size: 2.4rem;
+}
+.hero__conteudo button {
+  font-size: 2.4rem;
+  padding: 1.5rem 3rem;
+  border-radius: 0.5rem;
+  border: none;
+  cursor: pointer;
+  text-transform: uppercase;
+  color: #ffe0eb;
+  background: #660a1f;
 }
 
 /*# sourceMappingURL=style.css.map */
