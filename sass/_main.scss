@@ -12,7 +12,7 @@
     align-items: center;
     justify-items: left;
     height: 100%;
-    margin: 0 7%;
+    margin: 0 5%;
   }
   .container {
     height: 100%;
@@ -49,13 +49,16 @@
 .sobre {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  place-items: center;
+  align-items: center;
   &__img {
     height: 67rem;
+    width: auto;
     object-fit: cover;
   }
   &__conteudo {
-    padding: 0 10rem;
+    padding-right: 10%;
+    max-width: 52.5rem;
+    margin-left: 10.5rem;
     h2 {
       font-family: $font-titulo;
       line-height: 1.2;
@@ -85,13 +88,15 @@
 .cardapio {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  place-items: center;
+  align-items: center;
   &__img {
     height: 67rem;
+    width: auto;
     object-fit: cover;
   }
   &__conteudo {
-    padding: 0 10rem;
+    max-width: 52.5rem;
+    padding-left: 10%;
     h2 {
       font-family: $font-titulo;
       line-height: 1.2;

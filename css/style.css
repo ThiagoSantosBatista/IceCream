@@ -50,7 +50,7 @@ a {
   justify-content: space-between;
   align-items: center;
   height: 100%;
-  margin: 0 7%;
+  margin: 0 5%;
 }
 .header .container {
   height: 100%;
@@ -87,7 +87,7 @@ a {
   align-items: center;
   justify-items: left;
   height: 100%;
-  margin: 0 7%;
+  margin: 0 5%;
 }
 .hero .container {
   height: 100%;
@@ -123,14 +123,17 @@ a {
 .sobre {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  place-items: center;
+  align-items: center;
 }
 .sobre__img {
   height: 67rem;
+  width: auto;
   object-fit: cover;
 }
 .sobre__conteudo {
-  padding: 0 10rem;
+  padding-right: 10%;
+  max-width: 52.5rem;
+  margin-left: 10.5rem;
 }
 .sobre__conteudo h2 {
   font-family: "Arima Madurai", cursive;
@@ -159,14 +162,16 @@ a {
 .cardapio {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  place-items: center;
+  align-items: center;
 }
 .cardapio__img {
   height: 67rem;
+  width: auto;
   object-fit: cover;
 }
 .cardapio__conteudo {
-  padding: 0 10rem;
+  max-width: 52.5rem;
+  padding-left: 10%;
 }
 .cardapio__conteudo h2 {
   font-family: "Arima Madurai", cursive;
