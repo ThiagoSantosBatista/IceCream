@@ -210,7 +210,7 @@ a {
   margin-bottom: 4.8rem;
   color: #d01647;
 }
-.cardapio__conteudo button {
+.cardapio__conteudo a {
   font-size: 2.2rem;
   color: #ffffff;
 }
@@ -332,6 +332,9 @@ a {
 .footer-box {
   margin: 0 var(--mg-lados);
   padding: 9.1rem 0 7.2rem 0;
+}
+.footer-box a:hover path {
+  fill: #ffffff;
 }
 .footer__conteudo {
   display: flex;

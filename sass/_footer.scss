@@ -7,6 +7,9 @@
   &-box {
     margin: 0 var(--mg-lados);
     padding: 9.1rem 0 7.2rem 0;
+    a:hover path {
+      fill: $c-branco;
+    }
   }
   &__conteudo {
     display: flex;
