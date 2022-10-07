@@ -1,3 +1,7 @@
+:root {
+  --mg-lados: 5% ;
+}
+
 *,
 *::after,
 *::before {
@@ -32,26 +36,26 @@ a {
 }
 
 .container {
-  max-width: 144rem;
   margin: 0 auto;
+  max-width: 144rem;
 }
 
 .header {
   position: fixed;
   top: 0;
   left: 0;
-  height: 8rem;
   width: 100%;
+  height: 8rem;
+  z-index: 10;
   box-shadow: 0 0.4rem 0.2rem -0.1rem rgba(95, 23, 39, 0.25);
   background: #ffffff;
-  z-index: 10;
 }
 .header-box {
   display: flex;
   justify-content: space-between;
   align-items: center;
   height: 100%;
-  margin: 0 5%;
+  margin: 0 var(--mg-lados);
 }
 .header .container {
   height: 100%;
@@ -62,32 +66,46 @@ a {
 }
 
 .nav__list {
-  display: flex;
   gap: 1rem;
+  display: flex;
 }
 .nav__list a {
-  font-size: 1.7rem;
   padding: 1.5rem;
+  font-size: 1.7rem;
   letter-spacing: 0.1rem;
   color: #660a1f;
+}
+
+.subtitulo {
+  line-height: 1.2;
+  font-size: 4.8rem;
+  font-family: "Arima Madurai", cursive;
+}
+
+.btn {
+  padding: 1.5rem 3rem;
+  border-radius: 0.5rem;
+  border: none;
+  cursor: pointer;
+  text-transform: uppercase;
+  background: #660a1f;
 }
 
 .hero {
   margin-top: 8rem;
   max-height: 70rem;
   height: calc(100vh - 8rem);
-  background: url(/img/hero__img-desktop.png);
-  background-repeat: no-repeat;
-  background-position: right;
   background-size: cover;
-  object-fit: cover;
+  background-position: right;
+  background-repeat: no-repeat;
+  background: url(/img/hero__img-desktop.png);
 }
 .hero-box {
   display: grid;
   align-items: center;
   justify-items: start;
   height: 100%;
-  margin: 0 5%;
+  margin: 0 var(--mg-lados);
 }
 .hero .container {
   height: 100%;
@@ -96,127 +114,91 @@ a {
   max-width: 95ch;
 }
 .hero__conteudo h1 {
+  font-weight: 800;
   font-size: 6.4rem;
   line-height: 1.2;
   margin-bottom: 1.6rem;
   font-family: "Arima Madurai", cursive;
-  font-weight: 800;
   color: #660a1f;
 }
 .hero__conteudo p {
+  font-size: 2.4rem;
   line-height: 1.5;
   margin-bottom: 5.2rem;
   color: #8f253e;
-  font-size: 2.4rem;
 }
 .hero__conteudo button {
   font-size: 2.4rem;
-  padding: 1.5rem 3rem;
-  border-radius: 0.5rem;
-  border: none;
-  cursor: pointer;
-  text-transform: uppercase;
   color: #ffe0eb;
-  background: #660a1f;
 }
 
-.sobre {
+.sobre,
+.cardapio,
+.contato {
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: center;
 }
-.sobre__img {
+.sobre__img,
+.cardapio__img,
+.contato__img {
   height: 67rem;
   width: auto;
   object-fit: cover;
 }
+
 .sobre__conteudo {
   padding-right: 10%;
   max-width: 52.5rem;
   margin-left: 10.5rem;
 }
 .sobre__conteudo h2 {
-  font-family: "Arima Madurai", cursive;
-  line-height: 1.2;
-  font-size: 4.8rem;
   margin-bottom: 1.6rem;
   color: #a44b28;
 }
 .sobre__conteudo p {
   font-size: 2rem;
   line-height: 1.5;
-  color: #d05d30;
   margin-bottom: 1rem;
+  color: #d05d30;
 }
 .sobre__conteudo p:nth-child(3) {
   margin-bottom: 4.8rem;
 }
 .sobre__conteudo a {
-  font-size: 2.2rem;
-  color: #a44b28;
-  text-transform: uppercase;
   font-weight: 700;
+  font-size: 2.2rem;
+  text-transform: uppercase;
+  color: #a44b28;
   border-bottom: 0.2rem solid #a44b28;
 }
 
-.cardapio {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  align-items: center;
-}
-.cardapio__img {
-  height: 67rem;
-  width: auto;
-  object-fit: cover;
-}
 .cardapio__conteudo {
-  max-width: 52.5rem;
   padding-left: 10%;
+  max-width: 52.5rem;
 }
 .cardapio__conteudo h2 {
-  font-family: "Arima Madurai", cursive;
-  line-height: 1.2;
-  font-size: 4.8rem;
   margin-bottom: 1.6rem;
   color: #a31c39;
 }
 .cardapio__conteudo p {
   font-size: 2rem;
   line-height: 1.5;
-  color: #d01647;
   margin-bottom: 4.8rem;
+  color: #d01647;
 }
 .cardapio__conteudo button {
-  padding: 1.5rem 3rem;
-  background: #a31c39;
-  color: #ffffff;
-  border: none;
-  cursor: pointer;
-  text-transform: uppercase;
-  border-radius: 0.5rem;
   font-size: 2.2rem;
+  color: #ffffff;
 }
 
-.contato {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  align-items: center;
-}
-.contato__img {
-  height: 67rem;
-  width: auto;
-  object-fit: cover;
-}
 .contato__conteudo {
   padding-right: 10%;
   max-width: 52.5rem;
   margin-left: 10.5rem;
 }
 .contato__conteudo h2 {
-  font-family: "Arima Madurai", cursive;
-  line-height: 1.2;
-  font-size: 4.8rem;
-  margin-bottom: 1.6rem;
+  margin-bottom: 4.8rem;
   color: #244454;
 }
 .contato__conteudo h3 {
@@ -230,9 +212,6 @@ a {
 }
 .contato__conteudo li + li {
   margin-top: 3.6rem;
-}
-.contato__list {
-  margin-top: 4.8rem;
 }
 .contato__item {
   display: grid;
@@ -249,27 +228,24 @@ a {
 }
 
 .depoimentos {
-  background: #F99C00;
   text-align: center;
+  background: #f99c00;
 }
 .depoimentos-box {
-  margin: 0 5%;
+  margin: 0 var(--mg-lados);
   padding: 7.6rem 0;
 }
 .depoimentos-box h2 {
-  font-family: "Arima Madurai", cursive;
-  line-height: 1.2;
-  font-size: 4.8rem;
-  color: #ffffff;
   margin-bottom: 8rem;
+  color: #ffffff;
 }
 .depoimentos__card {
   display: grid;
   grid-template-rows: auto 1fr;
   width: 29.4rem;
-  background: #ffffff;
   border-radius: 0.5rem;
   position: relative;
+  background: #ffffff;
 }
 .depoimentos__card-conteudo {
   padding: 3rem 2.5rem;
@@ -280,8 +256,8 @@ a {
   line-height: 1.5;
 }
 .depoimentos__card-conteudo q {
-  font-size: 1.8rem;
   line-height: 1.5;
+  font-size: 1.8rem;
   color: #474747;
 }
 .depoimentos__list {
@@ -295,50 +271,50 @@ a {
   display: grid;
   place-items: center;
   padding: 2rem;
-  background: #591600;
   border-radius: 0.5rem;
+  background: #591600;
 }
 .pessoa.azul {
-  background: #014B7C;
+  background: #014b7c;
 }
 .pessoa.amarelo {
-  background: #FFD000;
+  background: #ffd000;
 }
 .pessoa.laranja {
-  background: #EA601B;
+  background: #ea601b;
 }
 .pessoa__bg {
+  display: block;
   position: absolute;
   top: 0;
   left: 0;
-  display: block;
-  width: 27.5rem;
-  height: 17rem;
-  background: #244454;
   z-index: -1;
+  height: 17rem;
+  width: 27.5rem;
+  background: #244454;
 }
 .pessoa__img {
+  z-index: 2;
   width: 15rem;
   height: auto;
-  z-index: 2;
 }
 
 .footer {
-  background: #F99C00;
-  background-image: url(/img/footer__bg-desktop.png);
-  background-repeat: repeat;
+  background: #f99c00;
   background-position: top;
+  background-repeat: repeat;
+  background-image: url(/img/footer__bg-desktop.png);
   position: relative;
 }
 .footer-box {
-  margin: 0 5%;
+  margin: 0 var(--mg-lados);
   padding: 9.1rem 0 7.2rem 0;
 }
 .footer__conteudo {
   display: flex;
   justify-content: space-between;
-  position: relative;
   padding-bottom: 3rem;
+  position: relative;
 }
 .footer__redes {
   display: flex;
@@ -347,11 +323,11 @@ a {
 .footer__me {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
   align-items: center;
-  color: #ffffff;
+  justify-content: center;
   font-size: 1.6rem;
   margin-top: 3rem;
+  color: #ffffff;
 }
 .footer__me p {
   margin-right: 2rem;
@@ -360,17 +336,17 @@ a {
   margin-right: 1.5rem;
 }
 .footer__me--azul {
-  color: #6AACC4;
   font-weight: bold;
+  color: #6aacc4;
 }
 
 .linha {
+  display: block;
   position: absolute;
   bottom: 0;
   left: 0;
-  display: block;
-  height: 0.2rem;
   width: 100%;
+  height: 0.2rem;
   border-radius: 0.5rem;
   background: #ffffff;
 }

@@ -1,18 +1,32 @@
+.subtitulo {
+  line-height: 1.2;
+  font-size: 4.8rem;
+  font-family: $font-titulo;
+}
+
+.btn {
+  padding: 1.5rem 3rem;
+  border-radius: 0.5rem;
+  border: none;
+  cursor: pointer;
+  text-transform: uppercase;
+  background: $c-rosa1;
+}
+
 .hero {
   margin-top: 8rem;
   max-height: 70rem;
   height: calc(100vh - 8rem);
-  background: url(/img/hero__img-desktop.png);
-  background-repeat: no-repeat;
-  background-position: right;
   background-size: cover;
-  object-fit: cover;
+  background-position: right;
+  background-repeat: no-repeat;
+  background: url(/img/hero__img-desktop.png);
   &-box {
     display: grid;
     align-items: center;
     justify-items: start;
     height: 100%;
-    margin: 0 5%;
+    margin: 0 var(--mg-lados);
   }
   .container {
     height: 100%;
@@ -20,109 +34,27 @@
   &__conteudo {
     max-width: 95ch;
     h1 {
+      font-weight: 800;
       font-size: 6.4rem;
       line-height: 1.2;
       margin-bottom: 1.6rem;
       font-family: $font-titulo;
-      font-weight: 800;
       color: $c-rosa1;
     }
     p {
+      font-size: 2.4rem;
       line-height: 1.5;
       margin-bottom: 5.2rem;
       color: $c-rosa2;
-      font-size: 2.4rem;
     }
     button {
       font-size: 2.4rem;
-      padding: 1.5rem 3rem;
-      border-radius: 0.5rem;
-      border: none;
-      cursor: pointer;
-      text-transform: uppercase;
       color: $c-rosa3;
-      background: $c-rosa1;
     }
   }
 }
-
-.sobre {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  align-items: center;
-  &__img {
-    height: 67rem;
-    width: auto;
-    object-fit: cover;
-  }
-  &__conteudo {
-    padding-right: 10%;
-    max-width: 52.5rem;
-    margin-left: 10.5rem;
-    h2 {
-      font-family: $font-titulo;
-      line-height: 1.2;
-      font-size: 4.8rem;
-      margin-bottom: 1.6rem;
-      color: $c-laranja;
-    }
-    p {
-      font-size: 2rem;
-      line-height: 1.5;
-      color: $c-laranja2;
-      margin-bottom: 1rem;
-    }
-    & p:nth-child(3) {
-      margin-bottom: 4.8rem;
-    }
-    a {
-      font-size: 2.2rem;
-      color: $c-laranja;
-      text-transform: uppercase;
-      font-weight: 700;
-      border-bottom: 0.2rem solid $c-laranja;
-    }
-  }
-}
-
-.cardapio {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  align-items: center;
-  &__img {
-    height: 67rem;
-    width: auto;
-    object-fit: cover;
-  }
-  &__conteudo {
-    max-width: 52.5rem;
-    padding-left: 10%;
-    h2 {
-      font-family: $font-titulo;
-      line-height: 1.2;
-      font-size: 4.8rem;
-      margin-bottom: 1.6rem;
-      color: $c-rosa4;
-    }
-    p {
-      font-size: 2rem;
-      line-height: 1.5;
-      color: $c-rosa5;
-      margin-bottom: 4.8rem;
-    }
-    button {
-      padding: 1.5rem 3rem;
-      background: $c-rosa4;
-      color: $c-branco;
-      border: none;
-      cursor: pointer;
-      text-transform: uppercase;
-      border-radius: 0.5rem;
-      font-size: 2.2rem;
-    }
-  }
-}
-
+.sobre,
+.cardapio,
 .contato {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -132,15 +64,63 @@
     width: auto;
     object-fit: cover;
   }
+}
+.sobre {
   &__conteudo {
     padding-right: 10%;
     max-width: 52.5rem;
     margin-left: 10.5rem;
     h2 {
-      font-family: $font-titulo;
-      line-height: 1.2;
-      font-size: 4.8rem;
       margin-bottom: 1.6rem;
+      color: $c-laranja;
+    }
+    p {
+      font-size: 2rem;
+      line-height: 1.5;
+      margin-bottom: 1rem;
+      color: $c-laranja2;
+    }
+    & p:nth-child(3) {
+      margin-bottom: 4.8rem;
+    }
+    a {
+      font-weight: 700;
+      font-size: 2.2rem;
+      text-transform: uppercase;
+      color: $c-laranja;
+      border-bottom: 0.2rem solid $c-laranja;
+    }
+  }
+}
+
+.cardapio {
+  &__conteudo {
+    padding-left: 10%;
+    max-width: 52.5rem;
+    h2 {
+      margin-bottom: 1.6rem;
+      color: $c-rosa4;
+    }
+    p {
+      font-size: 2rem;
+      line-height: 1.5;
+      margin-bottom: 4.8rem;
+      color: $c-rosa5;
+    }
+    button {
+      font-size: 2.2rem;
+      color: $c-branco;
+    }
+  }
+}
+
+.contato {
+  &__conteudo {
+    padding-right: 10%;
+    max-width: 52.5rem;
+    margin-left: 10.5rem;
+    h2 {
+      margin-bottom: 4.8rem;
       color: $c-azul;
     }
     h3 {
@@ -155,9 +135,6 @@
     li + li {
       margin-top: 3.6rem;
     }
-  }
-  &__list {
-    margin-top: 4.8rem;
   }
   &__item {
     display: grid;
@@ -175,26 +152,23 @@
 }
 
 .depoimentos {
-  background: $c-dourado;
   text-align: center;
+  background: $c-dourado;
   &-box {
-    margin: 0 5%;
+    margin: 0 var(--mg-lados);
     padding: 7.6rem 0;
     h2 {
-      font-family: $font-titulo;
-      line-height: 1.2;
-      font-size: 4.8rem;
-      color: $c-branco;
       margin-bottom: 8rem;
+      color: $c-branco;
     }
   }
   &__card {
     display: grid;
     grid-template-rows: auto 1fr;
     width: 29.4rem;
-    background: $c-branco;
     border-radius: 0.5rem;
     position: relative;
+    background: $c-branco;
     &-conteudo {
       padding: 3rem 2.5rem;
       h3 {
@@ -203,8 +177,8 @@
         line-height: 1.5;
       }
       q {
-        font-size: 1.8rem;
         line-height: 1.5;
+        font-size: 1.8rem;
         color: $c-cinza;
       }
     }
@@ -220,8 +194,8 @@
   display: grid;
   place-items: center;
   padding: 2rem;
-  background: $c-marrom;
   border-radius: 0.5rem;
+  background: $c-marrom;
   &.azul {
     background: $c-azul3;
   }
@@ -232,18 +206,18 @@
     background: $c-laranja3;
   }
   &__bg {
+    display: block;
     position: absolute;
     top: 0;
     left: 0;
-    display: block;
-    width: 27.5rem;
-    height: 17rem;
-    background: $c-azul;
     z-index: -1;
+    height: 17rem;
+    width: 27.5rem;
+    background: $c-azul;
   }
   &__img {
+    z-index: 2;
     width: 15rem;
     height: auto;
-    z-index: 2;
   }
 }
