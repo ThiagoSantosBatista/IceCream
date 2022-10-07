@@ -31,6 +31,21 @@
       font-size: 1.7rem;
       letter-spacing: 0.1rem;
       color: $c-rosa1;
+      position: relative;
+      &::after {
+        content: "";
+        position: absolute;
+        bottom: 0.5rem;
+        left: 1.5rem;
+        height: 0.3rem;
+        width: 0%;
+        transition: 0.3s;
+        border-radius: 0.5rem;
+        background: $c-rosa1;
+      }
+      &:hover::after {
+        width: calc(100% - 3rem);
+      }
     }
   }
 }

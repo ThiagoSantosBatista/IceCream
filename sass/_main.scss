@@ -11,6 +11,9 @@
   cursor: pointer;
   text-transform: uppercase;
   background: $c-rosa1;
+  &:hover{
+    background: $c-rosa2;
+  }
 }
 
 .hero {
@@ -89,6 +92,10 @@
       text-transform: uppercase;
       color: $c-laranja;
       border-bottom: 0.2rem solid $c-laranja;
+      &:hover{
+        color: $c-laranja2;
+        border-color: $c-laranja2;
+      }
     }
   }
 }
