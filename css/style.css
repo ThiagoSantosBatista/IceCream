@@ -272,14 +272,14 @@ a {
   position: relative;
 }
 .depoimentos__card-conteudo {
-  padding: 3rem 2rem;
+  padding: 3rem 2.5rem;
 }
 .depoimentos__card-conteudo h3 {
   font-size: 2.2rem;
   margin-bottom: 1rem;
   line-height: 1.5;
 }
-.depoimentos__card-conteudo p {
+.depoimentos__card-conteudo q {
   font-size: 1.8rem;
   line-height: 1.5;
   color: #474747;
