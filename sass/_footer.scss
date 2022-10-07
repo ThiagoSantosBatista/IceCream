@@ -1,0 +1,50 @@
+.footer {
+  background: $c-dourado;
+  background-image: url(/img/footer__bg-desktop.png);
+  background-repeat: repeat;
+  background-position: top;
+  position: relative;
+  &-box {
+    margin: 0 5%;
+    padding: 9.1rem 0 7.2rem 0;
+  }
+  &__conteudo {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    padding-bottom: 3rem;
+  }
+  &__redes {
+    display: flex;
+    gap: 1.5rem;
+  }
+  &__me {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    color: $c-branco;
+    font-size: 1.6rem;
+    margin-top: 3rem;
+    p {
+      margin-right: 2rem;
+    }
+    a:nth-child(2) {
+      margin-right: 1.5rem;
+    }
+    &--azul {
+      color: $c-azul4;
+      font-weight: bold;
+    }
+  }
+}
+.linha {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: block;
+  height: 0.2rem;
+  width: 100%;
+  border-radius: 0.5rem;
+  background: $c-branco;
+}

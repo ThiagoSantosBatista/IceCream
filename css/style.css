@@ -9,6 +9,7 @@
 
 html {
   font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -265,7 +266,7 @@ a {
 .depoimentos__card {
   display: grid;
   grid-template-rows: auto 1fr;
-  width: 27.5rem;
+  width: 29.4rem;
   background: #ffffff;
   border-radius: 0.5rem;
   position: relative;
@@ -320,6 +321,58 @@ a {
   width: 15rem;
   height: auto;
   z-index: 2;
+}
+
+.footer {
+  background: #F99C00;
+  background-image: url(/img/footer__bg-desktop.png);
+  background-repeat: repeat;
+  background-position: top;
+  position: relative;
+}
+.footer-box {
+  margin: 0 5%;
+  padding: 9.1rem 0 7.2rem 0;
+}
+.footer__conteudo {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  padding-bottom: 3rem;
+}
+.footer__redes {
+  display: flex;
+  gap: 1.5rem;
+}
+.footer__me {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+  font-size: 1.6rem;
+  margin-top: 3rem;
+}
+.footer__me p {
+  margin-right: 2rem;
+}
+.footer__me a:nth-child(2) {
+  margin-right: 1.5rem;
+}
+.footer__me--azul {
+  color: #6AACC4;
+  font-weight: bold;
+}
+
+.linha {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: block;
+  height: 0.2rem;
+  width: 100%;
+  border-radius: 0.5rem;
+  background: #ffffff;
 }
 
 /*# sourceMappingURL=style.css.map */

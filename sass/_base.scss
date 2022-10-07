@@ -11,6 +11,7 @@ $c-amarelo: #FFD000;
 $c-azul: #244454;
 $c-azul2: #375665;
 $c-azul3: #014B7C;
+$c-azul4: #6AACC4;
 $c-cinza: #474747;
 $c-preto: #121212;
 $c-branco: #ffffff;
@@ -28,6 +29,7 @@ $font-titulo: 'Arima Madurai', cursive;
 }
 html {
   font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 body {
   min-height: 100vh;
