@@ -243,7 +243,7 @@ a {
   justify-content: start;
   gap: 1rem 1.5rem;
 }
-.contato__item img {
+.contato__item svg {
   grid-row: 1/-1;
 }
 .contato__item--mg p:first-child {
