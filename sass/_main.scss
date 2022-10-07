@@ -173,3 +173,77 @@
     }
   }
 }
+
+.depoimentos {
+  background: $c-dourado;
+  text-align: center;
+  &-box {
+    margin: 0 5%;
+    padding: 7.6rem 0;
+    h2 {
+      font-family: $font-titulo;
+      line-height: 1.2;
+      font-size: 4.8rem;
+      color: $c-branco;
+      margin-bottom: 8rem;
+    }
+  }
+  &__card {
+    display: grid;
+    grid-template-rows: auto 1fr;
+    width: 27.5rem;
+    background: $c-branco;
+    border-radius: 0.5rem;
+    position: relative;
+    &-conteudo {
+      padding: 3rem 2rem;
+      h3 {
+        font-size: 2.2rem;
+        margin-bottom: 1rem;
+        line-height: 1.5;
+      }
+      p {
+        font-size: 1.8rem;
+        line-height: 1.5;
+        color: $c-cinza;
+      }
+    }
+  }
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 4rem;
+  }
+}
+.pessoa {
+  display: grid;
+  place-items: center;
+  padding: 2rem;
+  background: $c-marrom;
+  border-radius: 0.5rem;
+  &.azul {
+    background: $c-azul3;
+  }
+  &.amarelo {
+    background: $c-amarelo;
+  }
+  &.laranja {
+    background: $c-laranja3;
+  }
+  &__bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 27.5rem;
+    height: 17rem;
+    background: $c-azul;
+    z-index: -1;
+  }
+  &__img {
+    width: 15rem;
+    height: auto;
+    z-index: 2;
+  }
+}

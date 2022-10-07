@@ -247,4 +247,79 @@ a {
   margin-bottom: 0.5rem;
 }
 
+.depoimentos {
+  background: #F99C00;
+  text-align: center;
+}
+.depoimentos-box {
+  margin: 0 5%;
+  padding: 7.6rem 0;
+}
+.depoimentos-box h2 {
+  font-family: "Arima Madurai", cursive;
+  line-height: 1.2;
+  font-size: 4.8rem;
+  color: #ffffff;
+  margin-bottom: 8rem;
+}
+.depoimentos__card {
+  display: grid;
+  grid-template-rows: auto 1fr;
+  width: 27.5rem;
+  background: #ffffff;
+  border-radius: 0.5rem;
+  position: relative;
+}
+.depoimentos__card-conteudo {
+  padding: 3rem 2rem;
+}
+.depoimentos__card-conteudo h3 {
+  font-size: 2.2rem;
+  margin-bottom: 1rem;
+  line-height: 1.5;
+}
+.depoimentos__card-conteudo p {
+  font-size: 1.8rem;
+  line-height: 1.5;
+  color: #474747;
+}
+.depoimentos__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 4rem;
+}
+
+.pessoa {
+  display: grid;
+  place-items: center;
+  padding: 2rem;
+  background: #591600;
+  border-radius: 0.5rem;
+}
+.pessoa.azul {
+  background: #014B7C;
+}
+.pessoa.amarelo {
+  background: #FFD000;
+}
+.pessoa.laranja {
+  background: #EA601B;
+}
+.pessoa__bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 27.5rem;
+  height: 17rem;
+  background: #244454;
+  z-index: -1;
+}
+.pessoa__img {
+  width: 15rem;
+  height: auto;
+  z-index: 2;
+}
+
 /*# sourceMappingURL=style.css.map */
