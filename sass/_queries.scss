@@ -40,6 +40,8 @@
     }
   }
   .hero {
+    margin-top: 7rem;
+    height: calc(100vh - 7rem);
     background-image: url(/img/hero__img-mobile.png);
     &-box {
       justify-items: center;
@@ -61,7 +63,7 @@
     }
     &__conteudo {
       max-width: 70rem;
-      padding: 10rem 10%;
+      padding: 10rem 5%;
     }
   }
   .cardapio__conteudo h2 {

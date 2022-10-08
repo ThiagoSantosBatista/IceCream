@@ -139,13 +139,13 @@ a {
   align-items: center;
   justify-items: start;
   height: 100%;
-  margin: 0 var(--mg-lados);
 }
 .hero .container {
   height: 100%;
 }
 .hero__conteudo {
-  max-width: 95ch;
+  max-width: 65rem;
+  padding: 0 5%;
 }
 .hero__conteudo h1 {
   font-weight: 800;
@@ -416,6 +416,8 @@ a {
     padding-top: 15rem;
   }
   .hero {
+    margin-top: 7rem;
+    height: calc(100vh - 7rem);
     background-image: url(/img/hero__img-mobile.png);
   }
   .hero-box {
@@ -442,7 +444,7 @@ a {
 .cardapio__conteudo,
 .contato__conteudo {
     max-width: 70rem;
-    padding: 10rem 10%;
+    padding: 10rem 5%;
   }
   .cardapio__conteudo h2 {
     max-width: 100%;

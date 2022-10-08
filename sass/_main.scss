@@ -30,13 +30,13 @@
     align-items: center;
     justify-items: start;
     height: 100%;
-    margin: 0 var(--mg-lados);
   }
   .container {
     height: 100%;
   }
   &__conteudo {
-    max-width: 95ch;
+    max-width: 65rem;
+    padding: 0 5%;
     h1 {
       font-weight: 800;
       font-size: 6.4rem;
