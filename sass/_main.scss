@@ -5,13 +5,14 @@
 }
 
 .btn {
+  font-size: 2.2rem;
   padding: 1.5rem 3rem;
   border-radius: 0.5rem;
   border: none;
   cursor: pointer;
   text-transform: uppercase;
   background: $c-rosa1;
-  &:hover{
+  &:hover {
     background: $c-rosa2;
   }
 }
@@ -20,10 +21,10 @@
   margin-top: 8rem;
   max-height: 70rem;
   height: calc(100vh - 8rem);
+  background: url(/img/hero__img-desktop.png);
   background-size: cover;
   background-position: right;
   background-repeat: no-repeat;
-  background: url(/img/hero__img-desktop.png);
   &-box {
     display: grid;
     align-items: center;
@@ -51,7 +52,6 @@
       color: $c-rosa2;
     }
     button {
-      font-size: 2.4rem;
       color: $c-rosa3;
     }
   }
@@ -64,15 +64,16 @@
   align-items: center;
   &__img {
     height: 67rem;
-    width: auto;
+    width: 100%;
     object-fit: cover;
+  }
+  &__conteudo {
+    padding: 10%;
+    max-width: 65rem;
   }
 }
 .sobre {
   &__conteudo {
-    padding-right: 10%;
-    max-width: 52.5rem;
-    margin-left: 10.5rem;
     h2 {
       margin-bottom: 1.6rem;
       color: $c-laranja;
@@ -92,7 +93,7 @@
       text-transform: uppercase;
       color: $c-laranja;
       border-bottom: 0.2rem solid $c-laranja;
-      &:hover{
+      &:hover {
         color: $c-laranja2;
         border-color: $c-laranja2;
       }
@@ -102,10 +103,9 @@
 
 .cardapio {
   &__conteudo {
-    padding-left: 10%;
-    max-width: 52.5rem;
     h2 {
       margin-bottom: 1.6rem;
+      max-width: 52.5rem;
       color: $c-rosa4;
     }
     p {
@@ -115,7 +115,6 @@
       color: $c-rosa5;
     }
     a {
-      font-size: 2.2rem;
       color: $c-branco;
     }
   }
@@ -123,9 +122,6 @@
 
 .contato {
   &__conteudo {
-    padding-right: 10%;
-    max-width: 52.5rem;
-    margin-left: 10.5rem;
     h2 {
       margin-bottom: 4.8rem;
       color: $c-azul;
@@ -172,7 +168,7 @@
   &__card {
     display: grid;
     grid-template-rows: auto 1fr;
-    width: 29.4rem;
+    max-width: 29.4rem;
     border-radius: 0.5rem;
     position: relative;
     background: $c-branco;
@@ -191,8 +187,8 @@
     }
   }
   &__list {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
     justify-content: center;
     gap: 4rem;
   }
@@ -212,19 +208,131 @@
   &.laranja {
     background: $c-laranja3;
   }
-  &__bg {
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -1;
-    height: 17rem;
-    width: 27.5rem;
-    background: $c-azul;
-  }
   &__img {
     z-index: 2;
     width: 15rem;
     height: auto;
+  }
+}
+@media screen and (max-width: 1250px) {
+  .hero {
+    background-position: center;
+  }
+  .depoimentos__list {
+    grid-template-columns: auto auto;
+  }
+}
+@media screen and (max-width: 950px) {
+  html {
+    scroll-padding-top: 7rem;
+  }
+  .hero {
+    background-image: url(/img/hero__img-mobile.png);
+    &-box {
+      justify-items: center;
+    }
+    &__conteudo {
+      max-width: 110ch;
+    }
+  }
+  .sobre,
+  .cardapio,
+  .contato {
+    display: grid;
+    grid-template-columns: auto;
+    align-items: center;
+    justify-items: center;
+    & picture {
+      width: 100%;
+      order: -1;
+    }
+    &__conteudo {
+      max-width: 70rem;
+      padding: 10rem 10%;
+    }
+  }
+  .cardapio__conteudo h2 {
+    max-width: 100%;
+  }
+}
+@media screen and (max-width: 650px) {
+  .subtitulo {
+    font-size: 4rem;
+  }
+  .hero__conteudo {
+    h1 {
+      font-size: 5rem;
+    }
+  }
+  .sobre,
+  .cardapio,
+  .contato {
+    &__img {
+      height: 45rem;
+    }
+  }
+  .depoimentos__list {
+    grid-template-columns: auto;
+  }
+}
+@media screen and (max-width: 500px) {
+    .hero__conteudo {
+        h1 {
+          font-size: 4.4rem;
+        }
+        p {
+          font-size: 2rem;
+        }
+      }
+  .contato {
+    .contato__item {
+      grid-template-columns: auto;
+      grid-template-rows: repeat(3, auto);
+      h3 {
+        font-size: 2rem;
+      }
+      p {
+        font-size: 1.8rem;
+      }
+      svg {
+        grid-row: 1;
+        margin-bottom: 1.5rem;
+      }
+    }
+    &__conteudo {
+      li + li {
+        margin-top: 4.4rem;
+      }
+    }
+  }
+  .btn {
+    font-size: 2rem;
+  }
+  
+}
+
+@media screen and (max-width: 375px) {
+  .subtitulo {
+    font-size: 3.5rem;
+  }
+  .btn {
+    font-size: 1.8rem;
+  }
+  .sobre,
+  .cardapio {
+    &__conteudo p {
+      font-size: 1.8rem;
+    }
+    &__conteudo a {
+      font-size: 2rem;
+    }
+  }
+  .hero__conteudo {
+    h1 {
+      font-size: 4rem;
+    }
+    p {
+      font-size: 1.8rem;
+    }
   }
 }
