@@ -1,0 +1,156 @@
+@media screen and (max-width: 1250px) {
+  .hero {
+    background-position: center;
+  }
+  .depoimentos__list {
+    grid-template-columns: auto auto;
+  }
+}
+@media screen and (max-width: 950px) {
+  html {
+    scroll-padding-top: 7rem;
+  }
+  .header {
+    height: 7rem;
+    &-box {
+      position: relative;
+    }
+  }
+  #menu__mobile {
+    display: block;
+  }
+  .nav {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 30%;
+    min-height: 100vh;
+    width: calc(100vw - 30%);
+    transition: all 0.3s;
+    background: $c-branco;
+    box-shadow: 0 0 0 100rem rgba(0, 0, 0, 0.2);
+    z-index: 19;
+    &.ativo {
+      display: block;
+    }
+    &__list {
+      flex-direction: column;
+      align-items: center;
+      padding-top: 15rem;
+    }
+  }
+  .hero {
+    background-image: url(/img/hero__img-mobile.png);
+    &-box {
+      justify-items: center;
+    }
+    &__conteudo {
+      max-width: 110ch;
+    }
+  }
+  .sobre,
+  .cardapio,
+  .contato {
+    display: grid;
+    grid-template-columns: auto;
+    align-items: center;
+    justify-items: center;
+    & picture {
+      width: 100%;
+      order: -1;
+    }
+    &__conteudo {
+      max-width: 70rem;
+      padding: 10rem 10%;
+    }
+  }
+  .cardapio__conteudo h2 {
+    max-width: 100%;
+  }
+}
+@media screen and (max-width: 650px) {
+  .subtitulo {
+    font-size: 4rem;
+  }
+  .hero__conteudo {
+    h1 {
+      font-size: 5rem;
+    }
+  }
+  .sobre,
+  .cardapio,
+  .contato {
+    &__img {
+      height: 45rem;
+    }
+  }
+  .depoimentos__list {
+    grid-template-columns: auto;
+  }
+  .footer__conteudo {
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+  }
+}
+@media screen and (max-width: 500px) {
+  .hero__conteudo {
+    h1 {
+      font-size: 4.4rem;
+    }
+    p {
+      font-size: 2rem;
+    }
+  }
+  .contato {
+    .contato__item {
+      grid-template-columns: auto;
+      grid-template-rows: repeat(3, auto);
+      h3 {
+        font-size: 2rem;
+      }
+      p {
+        font-size: 1.8rem;
+      }
+      svg {
+        grid-row: 1;
+        justify-self: start;
+        margin-bottom: 1.5rem;
+      }
+    }
+    &__conteudo {
+      li + li {
+        margin-top: 4.4rem;
+      }
+    }
+  }
+  .btn {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .subtitulo {
+    font-size: 3.5rem;
+  }
+  .btn {
+    font-size: 1.8rem;
+  }
+  .sobre,
+  .cardapio {
+    &__conteudo p {
+      font-size: 1.8rem;
+    }
+    &__conteudo a {
+      font-size: 2rem;
+    }
+  }
+  .hero__conteudo {
+    h1 {
+      font-size: 4rem;
+    }
+    p {
+      font-size: 1.8rem;
+    }
+  }
+}

@@ -106,37 +106,6 @@ a {
   display: block;
 }
 
-@media screen and (max-width: 950px) {
-  .headder {
-    height: 7rem;
-  }
-  .headder-box {
-    position: relative;
-  }
-  #menu__mobile {
-    display: block;
-  }
-  .nav {
-    display: none;
-    position: absolute;
-    top: 0;
-    left: 30%;
-    min-height: 100vh;
-    width: calc(100vw - 30%);
-    transition: all 0.3s;
-    background: #ffffff;
-    box-shadow: 0 0 0 100rem rgba(0, 0, 0, 0.2);
-    z-index: 19;
-  }
-  .nav.ativo {
-    display: block;
-  }
-  .nav__list {
-    flex-direction: column;
-    align-items: center;
-    padding-top: 15rem;
-  }
-}
 .subtitulo {
   line-height: 1.2;
   font-size: 4.8rem;
@@ -160,7 +129,7 @@ a {
   margin-top: 8rem;
   max-height: 70rem;
   height: calc(100vh - 8rem);
-  background: url(/img/hero__img-desktop.png);
+  background: url(/img/hero__img-desktop.jpg);
   background-size: cover;
   background-position: right;
   background-repeat: no-repeat;
@@ -225,7 +194,7 @@ a {
   font-size: 2rem;
   line-height: 1.5;
   margin-bottom: 1rem;
-  color: #d05d30;
+  color: #c45428;
 }
 .sobre__conteudo p:nth-child(3) {
   margin-bottom: 4.8rem;
@@ -238,8 +207,8 @@ a {
   border-bottom: 0.2rem solid #a44b28;
 }
 .sobre__conteudo a:hover {
-  color: #d05d30;
-  border-color: #d05d30;
+  color: #c45428;
+  border-color: #c45428;
 }
 
 .cardapio__conteudo h2 {
@@ -275,13 +244,14 @@ a {
 }
 .contato__item {
   display: grid;
-  grid-template-columns: auto auto;
+  grid-template-columns: 3.7rem auto;
   grid-template-rows: auto auto;
   justify-content: start;
   gap: 1rem 1.5rem;
 }
 .contato__item svg {
   grid-row: 1/-1;
+  justify-self: center;
 }
 .contato__item--mg p:first-child {
   margin-bottom: 0.5rem;
@@ -297,7 +267,7 @@ a {
 }
 .depoimentos-box h2 {
   margin-bottom: 8rem;
-  color: #ffffff;
+  color: #593800;
 }
 .depoimentos__card {
   display: grid;
@@ -349,122 +319,11 @@ a {
   height: auto;
 }
 
-@media screen and (max-width: 1250px) {
-  .hero {
-    background-position: center;
-  }
-  .depoimentos__list {
-    grid-template-columns: auto auto;
-  }
-}
-@media screen and (max-width: 950px) {
-  html {
-    scroll-padding-top: 7rem;
-  }
-  .hero {
-    background-image: url(/img/hero__img-mobile.png);
-  }
-  .hero-box {
-    justify-items: center;
-  }
-  .hero__conteudo {
-    max-width: 110ch;
-  }
-  .sobre,
-.cardapio,
-.contato {
-    display: grid;
-    grid-template-columns: auto;
-    align-items: center;
-    justify-items: center;
-  }
-  .sobre picture,
-.cardapio picture,
-.contato picture {
-    width: 100%;
-    order: -1;
-  }
-  .sobre__conteudo,
-.cardapio__conteudo,
-.contato__conteudo {
-    max-width: 70rem;
-    padding: 10rem 10%;
-  }
-  .cardapio__conteudo h2 {
-    max-width: 100%;
-  }
-}
-@media screen and (max-width: 650px) {
-  .subtitulo {
-    font-size: 4rem;
-  }
-  .hero__conteudo h1 {
-    font-size: 5rem;
-  }
-  .sobre__img,
-.cardapio__img,
-.contato__img {
-    height: 45rem;
-  }
-  .depoimentos__list {
-    grid-template-columns: auto;
-  }
-}
-@media screen and (max-width: 500px) {
-  .hero__conteudo h1 {
-    font-size: 4.4rem;
-  }
-  .hero__conteudo p {
-    font-size: 2rem;
-  }
-  .contato .contato__item {
-    grid-template-columns: auto;
-    grid-template-rows: repeat(3, auto);
-  }
-  .contato .contato__item h3 {
-    font-size: 2rem;
-  }
-  .contato .contato__item p {
-    font-size: 1.8rem;
-  }
-  .contato .contato__item svg {
-    grid-row: 1;
-    margin-bottom: 1.5rem;
-  }
-  .contato__conteudo li + li {
-    margin-top: 4.4rem;
-  }
-  .btn {
-    font-size: 2rem;
-  }
-}
-@media screen and (max-width: 375px) {
-  .subtitulo {
-    font-size: 3.5rem;
-  }
-  .btn {
-    font-size: 1.8rem;
-  }
-  .sobre__conteudo p,
-.cardapio__conteudo p {
-    font-size: 1.8rem;
-  }
-  .sobre__conteudo a,
-.cardapio__conteudo a {
-    font-size: 2rem;
-  }
-  .hero__conteudo h1 {
-    font-size: 4rem;
-  }
-  .hero__conteudo p {
-    font-size: 1.8rem;
-  }
-}
 .footer {
   background: #f99c00;
   background-position: top;
   background-repeat: repeat;
-  background-image: url(/img/footer__bg-desktop.png);
+  background-image: url(/img/footer__bg-desktop.svg);
   position: relative;
 }
 .footer-box {
@@ -515,11 +374,150 @@ a {
   background: #ffffff;
 }
 
+@media screen and (max-width: 1250px) {
+  .hero {
+    background-position: center;
+  }
+  .depoimentos__list {
+    grid-template-columns: auto auto;
+  }
+}
+@media screen and (max-width: 950px) {
+  html {
+    scroll-padding-top: 7rem;
+  }
+  .header {
+    height: 7rem;
+  }
+  .header-box {
+    position: relative;
+  }
+  #menu__mobile {
+    display: block;
+  }
+  .nav {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 30%;
+    min-height: 100vh;
+    width: calc(100vw - 30%);
+    transition: all 0.3s;
+    background: #ffffff;
+    box-shadow: 0 0 0 100rem rgba(0, 0, 0, 0.2);
+    z-index: 19;
+  }
+  .nav.ativo {
+    display: block;
+  }
+  .nav__list {
+    flex-direction: column;
+    align-items: center;
+    padding-top: 15rem;
+  }
+  .hero {
+    background-image: url(/img/hero__img-mobile.png);
+  }
+  .hero-box {
+    justify-items: center;
+  }
+  .hero__conteudo {
+    max-width: 110ch;
+  }
+  .sobre,
+.cardapio,
+.contato {
+    display: grid;
+    grid-template-columns: auto;
+    align-items: center;
+    justify-items: center;
+  }
+  .sobre picture,
+.cardapio picture,
+.contato picture {
+    width: 100%;
+    order: -1;
+  }
+  .sobre__conteudo,
+.cardapio__conteudo,
+.contato__conteudo {
+    max-width: 70rem;
+    padding: 10rem 10%;
+  }
+  .cardapio__conteudo h2 {
+    max-width: 100%;
+  }
+}
 @media screen and (max-width: 650px) {
+  .subtitulo {
+    font-size: 4rem;
+  }
+  .hero__conteudo h1 {
+    font-size: 5rem;
+  }
+  .sobre__img,
+.cardapio__img,
+.contato__img {
+    height: 45rem;
+  }
+  .depoimentos__list {
+    grid-template-columns: auto;
+  }
   .footer__conteudo {
     flex-direction: column;
     align-items: center;
     gap: 3rem;
+  }
+}
+@media screen and (max-width: 500px) {
+  .hero__conteudo h1 {
+    font-size: 4.4rem;
+  }
+  .hero__conteudo p {
+    font-size: 2rem;
+  }
+  .contato .contato__item {
+    grid-template-columns: auto;
+    grid-template-rows: repeat(3, auto);
+  }
+  .contato .contato__item h3 {
+    font-size: 2rem;
+  }
+  .contato .contato__item p {
+    font-size: 1.8rem;
+  }
+  .contato .contato__item svg {
+    grid-row: 1;
+    justify-self: start;
+    margin-bottom: 1.5rem;
+  }
+  .contato__conteudo li + li {
+    margin-top: 4.4rem;
+  }
+  .btn {
+    font-size: 2rem;
+  }
+}
+@media screen and (max-width: 375px) {
+  .subtitulo {
+    font-size: 3.5rem;
+  }
+  .btn {
+    font-size: 1.8rem;
+  }
+  .sobre__conteudo p,
+.cardapio__conteudo p {
+    font-size: 1.8rem;
+  }
+  .sobre__conteudo a,
+.cardapio__conteudo a {
+    font-size: 2rem;
+  }
+  .hero__conteudo h1 {
+    font-size: 4rem;
+  }
+  .hero__conteudo p {
+    font-size: 1.8rem;
   }
 }
 

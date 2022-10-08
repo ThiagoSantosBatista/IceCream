@@ -2,7 +2,7 @@
   background: $c-dourado;
   background-position: top;
   background-repeat: repeat;
-  background-image: url(/img/footer__bg-desktop.png);
+  background-image: url(/img/footer__bg-desktop.svg);
   position: relative;
   &-box {
     margin: 0 var(--mg-lados);
@@ -50,11 +50,4 @@
   height: 0.2rem;
   border-radius: 0.5rem;
   background: $c-branco;
-}
-@media screen and (max-width: 650px){
-    .footer__conteudo{
-        flex-direction: column;
-        align-items: center;
-        gap: 3rem;
-    }
 }

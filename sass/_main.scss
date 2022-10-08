@@ -21,7 +21,7 @@
   margin-top: 8rem;
   max-height: 70rem;
   height: calc(100vh - 8rem);
-  background: url(/img/hero__img-desktop.png);
+  background: url(/img/hero__img-desktop.jpg);
   background-size: cover;
   background-position: right;
   background-repeat: no-repeat;
@@ -141,12 +141,13 @@
   }
   &__item {
     display: grid;
-    grid-template-columns: auto auto;
+    grid-template-columns: 3.7rem auto;
     grid-template-rows: auto auto;
     justify-content: start;
     gap: 1rem 1.5rem;
     svg {
       grid-row: 1/-1;
+      justify-self: center;
     }
     &--mg p:first-child {
       margin-bottom: 0.5rem;
@@ -162,7 +163,7 @@
     padding: 7.6rem 0;
     h2 {
       margin-bottom: 8rem;
-      color: $c-branco;
+      color: $c-dourado2;
     }
   }
   &__card {
@@ -212,127 +213,5 @@
     z-index: 2;
     width: 15rem;
     height: auto;
-  }
-}
-@media screen and (max-width: 1250px) {
-  .hero {
-    background-position: center;
-  }
-  .depoimentos__list {
-    grid-template-columns: auto auto;
-  }
-}
-@media screen and (max-width: 950px) {
-  html {
-    scroll-padding-top: 7rem;
-  }
-  .hero {
-    background-image: url(/img/hero__img-mobile.png);
-    &-box {
-      justify-items: center;
-    }
-    &__conteudo {
-      max-width: 110ch;
-    }
-  }
-  .sobre,
-  .cardapio,
-  .contato {
-    display: grid;
-    grid-template-columns: auto;
-    align-items: center;
-    justify-items: center;
-    & picture {
-      width: 100%;
-      order: -1;
-    }
-    &__conteudo {
-      max-width: 70rem;
-      padding: 10rem 10%;
-    }
-  }
-  .cardapio__conteudo h2 {
-    max-width: 100%;
-  }
-}
-@media screen and (max-width: 650px) {
-  .subtitulo {
-    font-size: 4rem;
-  }
-  .hero__conteudo {
-    h1 {
-      font-size: 5rem;
-    }
-  }
-  .sobre,
-  .cardapio,
-  .contato {
-    &__img {
-      height: 45rem;
-    }
-  }
-  .depoimentos__list {
-    grid-template-columns: auto;
-  }
-}
-@media screen and (max-width: 500px) {
-    .hero__conteudo {
-        h1 {
-          font-size: 4.4rem;
-        }
-        p {
-          font-size: 2rem;
-        }
-      }
-  .contato {
-    .contato__item {
-      grid-template-columns: auto;
-      grid-template-rows: repeat(3, auto);
-      h3 {
-        font-size: 2rem;
-      }
-      p {
-        font-size: 1.8rem;
-      }
-      svg {
-        grid-row: 1;
-        margin-bottom: 1.5rem;
-      }
-    }
-    &__conteudo {
-      li + li {
-        margin-top: 4.4rem;
-      }
-    }
-  }
-  .btn {
-    font-size: 2rem;
-  }
-  
-}
-
-@media screen and (max-width: 375px) {
-  .subtitulo {
-    font-size: 3.5rem;
-  }
-  .btn {
-    font-size: 1.8rem;
-  }
-  .sobre,
-  .cardapio {
-    &__conteudo p {
-      font-size: 1.8rem;
-    }
-    &__conteudo a {
-      font-size: 2rem;
-    }
-  }
-  .hero__conteudo {
-    h1 {
-      font-size: 4rem;
-    }
-    p {
-      font-size: 1.8rem;
-    }
   }
 }
