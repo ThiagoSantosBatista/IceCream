@@ -3,7 +3,7 @@ const navItems = document.querySelectorAll(".nav__item");
 const nav = document.querySelector(".nav");
 const mobileMenuAbrir = document.querySelector("#menu__mobile-abrir");
 const mobileMenuFechar = document.querySelector("#menu__mobile-fechar");
-
+const form = document.querySelector("#form");
 
 function toggleMenu(event) {
   if (event.type === "touchstart") {
@@ -21,8 +21,24 @@ function toggleMenu(event) {
   }
 }
 
+function abrirModal(modalid) {
+  const modal = document.getElementById(modalid);
+  modal.classList.add("mostrar");
+  modal.addEventListener("click", (e) => {
+    if (e.target.id == modalid || e.target.id == "fechar") {
+      modal.classList.remove("mostrar");
+    }
+  });
+}
+
+form.addEventListener("submit", function (e) {
+  e.preventDefault();
+});
+
+abrirModal("modal");
+
 navItems.forEach((item) => {
-    item.addEventListener("click", toggleMenu);
+  item.addEventListener("click", toggleMenu);
 });
 
 mobileMenu.addEventListener("click", toggleMenu);
